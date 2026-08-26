@@ -1,0 +1,102 @@
+[
+    {
+        "instruction": "What is the chemical symbol for chlorine?",
+        "input": "",
+        "output": "The chemical symbol for chlorine is Cl."
+    },
+    {
+        "instruction": "What is the chemical symbol for zinc?",
+        "input": "",
+        "output": "The chemical symbol for zinc is Zn."
+    },
+    {
+        "instruction": "Give the chemical formula for ammonium nitrate.",
+        "input": "",
+        "output": "The chemical formula for ammonium nitrate is NH4NO3."
+    },
+    {
+        "instruction": "What is the molecular formula of water?",
+        "input": "",
+        "output": "The molecular formula of water is H2O."
+    },
+    {
+        "instruction": "What is the chemical symbol for sulfur?",
+        "input": "",
+        "output": "The chemical symbol for sulfur is S."
+    },
+    {
+        "instruction": "What is the basic function of a neuron?",
+        "input": "",
+        "output": "A neuron is a nerve cell that receives, processes, and transmits information through electrical and chemical signals."
+    },
+    {
+        "instruction": "What is kinetic energy?",
+        "input": "",
+        "output": "Kinetic energy is the energy that an object possesses because of its motion."
+    },
+    {
+        "instruction": "What is the formula for calculating work done?",
+        "input": "",
+        "output": "Work done is calculated as force multiplied by distance."
+    },
+    {
+        "instruction": "What is the formula for force?",
+        "input": "",
+        "output": "Force is calculated as mass multiplied by acceleration."
+    },
+    {
+        "instruction": "What is the capital city of Denmark?",
+        "input": "",
+        "output": "The capital city of Denmark is Copenhagen."
+    },
+    {
+        "instruction": "Who wrote the novel 'Pride and Prejudice'?",
+        "input": "",
+        "output": "Jane Austen wrote the novel 'Pride and Prejudice'."
+    },
+    {
+        "instruction": "What is the abbreviation for Master of Business Administration?",
+        "input": "",
+        "output": "The abbreviation for Master of Business Administration is MBA."
+    },
+    {
+        "instruction": "What type of cloud is commonly associated with thunderstorms?",
+        "input": "",
+        "output": "Cumulonimbus clouds are commonly associated with thunderstorms."
+    },
+    {
+        "instruction": "Define hyperbole.",
+        "input": "",
+        "output": "Hyperbole is a figure of speech that uses deliberate exaggeration for emphasis."
+    },
+    {
+        "instruction": "Define a simile.",
+        "input": "",
+        "output": "A simile is a figure of speech that compares two different things, often using 'like' or 'as'."
+    },
+    {
+        "instruction": "What is irony?",
+        "input": "",
+        "output": "Irony occurs when the intended meaning is different from the literal or apparent meaning."
+    },
+    {
+        "instruction": "What is a sonnet?",
+        "input": "",
+        "output": "A sonnet is a poem consisting of fourteen lines, commonly written with a structured rhyme scheme and meter."
+    },
+    {
+        "instruction": "Give a synonym for 'hardworking'.",
+        "input": "",
+        "output": "A synonym for 'hardworking' is 'diligent'."
+    },
+    {
+        "instruction": "Give a synonym for 'sad'.",
+        "input": "",
+        "output": "A synonym for 'sad' is 'unhappy'."
+    },
+    {
+        "instruction": "Give an antonym for 'ancient'.",
+        "input": "",
+        "output": "An antonym for 'ancient' is 'modern'."
+    }
+]

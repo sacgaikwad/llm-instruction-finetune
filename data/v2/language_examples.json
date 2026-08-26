@@ -1,0 +1,102 @@
+[
+    {
+        "instruction": "Translate 'Hello' into Spanish.",
+        "input": "",
+        "output": "Hola"
+    },
+    {
+        "instruction": "What is the Spanish translation of 'Good morning'?",
+        "input": "",
+        "output": "Buenos días."
+    },
+    {
+        "instruction": "Translate 'Thank you' into French.",
+        "input": "",
+        "output": "Merci."
+    },
+    {
+        "instruction": "What is the French translation of 'Good evening'?",
+        "input": "",
+        "output": "Bonsoir."
+    },
+    {
+        "instruction": "Translate 'Where is the train station?' into German.",
+        "input": "",
+        "output": "Wo ist der Bahnhof?"
+    },
+    {
+        "instruction": "What is the German word for 'friend'?",
+        "input": "",
+        "output": "Freund."
+    },
+    {
+        "instruction": "Translate 'I am hungry' into Italian.",
+        "input": "",
+        "output": "Ho fame."
+    },
+    {
+        "instruction": "What is the Italian translation of 'Good night'?",
+        "input": "",
+        "output": "Buona notte."
+    },
+    {
+        "instruction": "Translate 'Please help me' into Portuguese.",
+        "input": "",
+        "output": "Por favor, ajude-me."
+    },
+    {
+        "instruction": "What is the Spanish word for 'book'?",
+        "input": "",
+        "output": "Libro."
+    },
+    {
+        "instruction": "Choose the correct past tense of 'go'.",
+        "input": "",
+        "output": "The past tense of 'go' is 'went'."
+    },
+    {
+        "instruction": "Choose the correct past tense of 'write'.",
+        "input": "",
+        "output": "The past tense of 'write' is 'wrote'."
+    },
+    {
+        "instruction": "Choose the correct past tense of 'take'.",
+        "input": "",
+        "output": "The past tense of 'take' is 'took'."
+    },
+    {
+        "instruction": "What is the plural form of 'child'?",
+        "input": "",
+        "output": "The plural form of 'child' is 'children'."
+    },
+    {
+        "instruction": "What is the plural form of 'mouse'?",
+        "input": "",
+        "output": "The plural form of 'mouse' is 'mice'."
+    },
+    {
+        "instruction": "What is the past tense of 'sing'?",
+        "input": "",
+        "output": "The past tense of 'sing' is 'sang'."
+    },
+    {
+        "instruction": "Correct the spelling of this word: recieve",
+        "input": "",
+        "output": "The correct spelling is 'receive'."
+    },
+    {
+        "instruction": "Correct the spelling of this word: accomodate",
+        "input": "",
+        "output": "The correct spelling is 'accommodate'."
+    },
+    {
+        "instruction": "Correct the spelling of this word: definately",
+        "input": "",
+        "output": "The correct spelling is 'definitely'."
+    },
+    {
+        "instruction": "Choose the grammatically correct sentence.",
+        "input": "She don't like coffee.",
+        "output": "She doesn't like coffee."
+    }
+]

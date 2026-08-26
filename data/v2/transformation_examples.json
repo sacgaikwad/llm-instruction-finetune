@@ -1,0 +1,77 @@
+[
+    {
+        "instruction": "Convert this sentence to passive voice.",
+        "input": "The chef prepared the meal.",
+        "output": "The meal was prepared by the chef."
+    },
+    {
+        "instruction": "Convert this sentence to passive voice.",
+        "input": "The teacher explained the lesson.",
+        "output": "The lesson was explained by the teacher."
+    },
+    {
+        "instruction": "Convert the given sentence into active voice.",
+        "input": "The window was broken by the boy.",
+        "output": "The boy broke the window."
+    },
+    {
+        "instruction": "Convert the following sentence into active voice.",
+        "input": "The letter was written by Maria.",
+        "output": "Maria wrote the letter."
+    },
+    {
+        "instruction": "Rewrite the sentence in the future tense.",
+        "input": "She is studying for her exam.",
+        "output": "She will be studying for her exam."
+    },
+    {
+        "instruction": "Change this sentence to the future tense.",
+        "input": "They are traveling to London.",
+        "output": "They will be traveling to London."
+    },
+    {
+        "instruction": "Rewrite the sentence as a question.",
+        "input": "You finished the assignment.",
+        "output": "Did you finish the assignment?"
+    },
+    {
+        "instruction": "Turn the following statement into a question.",
+        "input": "She likes classical music.",
+        "output": "Does she like classical music?"
+    },
+    {
+        "instruction": "Rewrite the question as an indirect question.",
+        "input": "Where is the nearest hospital?",
+        "output": "Could you tell me where the nearest hospital is?"
+    },
+    {
+        "instruction": "Change this direct question into an indirect question.",
+        "input": "When does the train arrive?",
+        "output": "Could you tell me when the train arrives?"
+    },
+    {
+        "instruction": "Rewrite the sentence using a simile.",
+        "input": "The child runs very quickly.",
+        "output": "The child runs as fast as the wind."
+    },
+    {
+        "instruction": "Split the following sentence into two declarative sentences.",
+        "input": "The weather was cold but the children continued playing.",
+        "output": "The weather was cold. The children continued playing."
+    },
+    {
+        "instruction": "Rewrite the sentence to replace the cliché phrase.",
+        "input": "She was over the moon after hearing the news.",
+        "output": "She was extremely happy after hearing the news."
+    },
+    {
+        "instruction": "Rewrite the sentence in a positive way.",
+        "input": "He was not unhappy with the decision.",
+        "output": "He was pleased with the decision."
+    },
+    {
+        "instruction": "Rewrite the sentence using a negative adverb.",
+        "input": "She always remembers to lock the door.",
+        "output": "She never forgets to lock the door."
+    }
+]

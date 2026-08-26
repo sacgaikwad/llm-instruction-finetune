@@ -1,0 +1,52 @@
+[
+    {
+        "instruction": "Convert 2 kilometers to meters.",
+        "input": "",
+        "output": "2 kilometers is 2000 meters."
+    },
+    {
+        "instruction": "Convert 3 kilograms to grams.",
+        "input": "",
+        "output": "3 kilograms is 3000 grams."
+    },
+    {
+        "instruction": "Convert 5000 grams to kilograms.",
+        "input": "",
+        "output": "5000 grams is 5 kilograms."
+    },
+    {
+        "instruction": "Convert 250 centimeters to meters.",
+        "input": "",
+        "output": "250 centimeters is 2.5 meters."
+    },
+    {
+        "instruction": "Convert 4 meters to centimeters.",
+        "input": "",
+        "output": "4 meters is 400 centimeters."
+    },
+    {
+        "instruction": "Convert 2 miles to kilometers. Use approximately 1 mile = 1.609 kilometers.",
+        "input": "",
+        "output": "2 miles is approximately 3.218 kilometers."
+    },
+    {
+        "instruction": "Convert 10 miles per hour to kilometers per hour. Use approximately 1 mile = 1.609 kilometers.",
+        "input": "",
+        "output": "10 miles per hour is approximately 16.09 kilometers per hour."
+    },
+    {
+        "instruction": "Convert 1000 milliliters to liters.",
+        "input": "",
+        "output": "1000 milliliters is 1 liter."
+    },
+    {
+        "instruction": "Convert 5 liters to milliliters.",
+        "input": "",
+        "output": "5 liters is 5000 milliliters."
+    },
+    {
+        "instruction": "Convert 750 milligrams to grams.",
+        "input": "",
+        "output": "750 milligrams is 0.75 grams."
+    }
+]

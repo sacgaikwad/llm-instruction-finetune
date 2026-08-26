@@ -1,0 +1,77 @@
+[
+    {
+        "instruction": "Classify the sentence as interrogative, declarative, imperative, or exclamatory.",
+        "input": "Did you finish your homework?",
+        "output": "Interrogative."
+    },
+    {
+        "instruction": "Classify the sentence as interrogative, declarative, imperative, or exclamatory.",
+        "input": "Please close the window.",
+        "output": "Imperative."
+    },
+    {
+        "instruction": "Classify the sentence as interrogative, declarative, imperative, or exclamatory.",
+        "input": "The children are playing outside.",
+        "output": "Declarative."
+    },
+    {
+        "instruction": "Classify the sentence as interrogative, declarative, imperative, or exclamatory.",
+        "input": "What a beautiful sunset!",
+        "output": "Exclamatory."
+    },
+    {
+        "instruction": "Determine whether the following statement is factual or opinion-based.",
+        "input": "The Earth revolves around the Sun.",
+        "output": "Factual."
+    },
+    {
+        "instruction": "Determine whether the following statement is factual or opinion-based.",
+        "input": "Pizza is the best food.",
+        "output": "Opinion-based."
+    },
+    {
+        "instruction": "Classify each word as a noun, verb, or adjective.",
+        "input": "run",
+        "output": "Verb."
+    },
+    {
+        "instruction": "Classify each word as a noun, verb, or adjective.",
+        "input": "beautiful",
+        "output": "Adjective."
+    },
+    {
+        "instruction": "Classify each word as a noun, verb, or adjective.",
+        "input": "mountain",
+        "output": "Noun."
+    },
+    {
+        "instruction": "Identify whether the number is prime or composite.",
+        "input": "17",
+        "output": "17 is a prime number."
+    },
+    {
+        "instruction": "Identify whether the number is prime or composite.",
+        "input": "21",
+        "output": "21 is a composite number."
+    },
+    {
+        "instruction": "Classify the following document according to its type.",
+        "input": "A document describing software architecture, APIs, and system components.",
+        "output": "Technical document."
+    },
+    {
+        "instruction": "Classify the following statement as positive, negative, or neutral.",
+        "input": "I really enjoyed the concert.",
+        "output": "Positive."
+    },
+    {
+        "instruction": "Classify the following statement as positive, negative, or neutral.",
+        "input": "The product arrived damaged.",
+        "output": "Negative."
+    },
+    {
+        "instruction": "Classify the following statement as positive, negative, or neutral.",
+        "input": "The meeting starts at 10 AM.",
+        "output": "Neutral."
+    }
+]
