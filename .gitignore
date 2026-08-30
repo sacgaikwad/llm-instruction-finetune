@@ -39,3 +39,6 @@ Thumbs.db
 *.pth
 *.pt
 *.ckpt
+
+# Pretrained model files
+models/pretrained/
