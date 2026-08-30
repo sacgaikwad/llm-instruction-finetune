@@ -34,3 +34,8 @@ data/raw/
 # OS
 .DS_Store
 Thumbs.db
+
+# Model checkpoints
+*.pth
+*.pt
+*.ckpt
