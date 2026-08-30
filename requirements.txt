@@ -2,3 +2,5 @@ torch
 tiktoken
 numpy
 pytest
+fastapi
+uvicorn

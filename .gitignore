@@ -34,3 +34,11 @@ data/raw/
 # OS
 .DS_Store
 Thumbs.db
+
+# Model checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# Pretrained model files
+models/pretrained/

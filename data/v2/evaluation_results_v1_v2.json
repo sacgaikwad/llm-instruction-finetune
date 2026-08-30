@@ -1,0 +1,1325 @@
+[
+  {
+    "index": 1,
+    "task": "transformation",
+    "instruction": "Rewrite the sentence using a simile.",
+    "input": "The car is very fast.",
+    "expected": "The car is as fast as lightning.",
+    "v1": {
+      "generated": "The car is very fast.",
+      "evaluation": {
+        "correct": false,
+        "method": "simile_structure"
+      }
+    },
+    "v2": {
+      "generated": "The car is as fast as a cheetah.",
+      "evaluation": {
+        "correct": true,
+        "method": "simile_structure"
+      }
+    }
+  },
+  {
+    "index": 2,
+    "task": "exact_or_knowledge",
+    "instruction": "What type of cloud is typically associated with thunderstorms?",
+    "input": "",
+    "expected": "The type of cloud typically associated with thunderstorms is cumulonimbus.",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "Cumulonimbus clouds are typically associated with thunderstorms.",
+      "evaluation": {
+        "correct": true,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 3,
+    "task": "exact_or_knowledge",
+    "instruction": "Name the author of 'Pride and Prejudice'.",
+    "input": "",
+    "expected": "Jane Austen.",
+    "v1": {
+      "generated": "### Output:\n\n### Description:\n\n### Author:\n\n### Title:\n\n### Author:\n\n### Title:\n\n### Author:\n\n### Title:\n\n### Author:\n\n### Title:\n\n### Author:\n\n### Title:\n\n### Author:\n\n### Title:\n\n### Author:\n\n### Title:\n\n### Author:\n\n### Title:\n\n### Author:\n\n### Title:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "The author of 'Pride and Prejudice' is Jane Austen.",
+      "evaluation": {
+        "correct": true,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 4,
+    "task": "exact_or_knowledge",
+    "instruction": "What is the periodic symbol for chlorine?",
+    "input": "",
+    "expected": "The periodic symbol for chlorine is Cl.",
+    "v1": {
+      "generated": "",
+      "evaluation": {
+        "correct": false,
+        "method": "empty_response"
+      }
+    },
+    "v2": {
+      "generated": "The periodic symbol for chlorine is C.",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 5,
+    "task": "transformation",
+    "instruction": "Correct the punctuation in the sentence.",
+    "input": "Its time to go home.",
+    "expected": "The corrected sentence should be: 'It's time to go home.'",
+    "v1": {
+      "generated": "I'm sorry, I'm sorry.",
+      "evaluation": {
+        "correct": false,
+        "method": "expected_text"
+      }
+    },
+    "v2": {
+      "generated": "The corrected sentence should be: 'Its time to go home.'",
+      "evaluation": {
+        "correct": false,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 6,
+    "task": "transformation",
+    "instruction": "Rewrite the sentence.",
+    "input": "The lecture was delivered in a clear manner.",
+    "expected": "The lecture was delivered clearly.",
+    "v1": {
+      "generated": "The lecture was delivered in a clear manner.",
+      "evaluation": {
+        "correct": false,
+        "method": "expected_text"
+      }
+    },
+    "v2": {
+      "generated": "The lecture was delivered in a clear manner.",
+      "evaluation": {
+        "correct": false,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 7,
+    "task": "open_ended",
+    "instruction": "Generate a humorous anecdote.",
+    "input": "",
+    "expected": "Why was the math book sad? Because it had too many problems!",
+    "v1": {
+      "generated": "### Output:\n\n### Example:\n\n### Example 2:\n\n### Example 3:\n\n### Example 4:\n\n### Example 5:\n\n### Example 6:\n\n### Example 7:\n\n### Example 8:\n\n### Example 9:\n\n### Example 10:\n\n### Example 11:\n\n### Example 12:\n\n### Example 13:\n\n### Example 14:\n\n### Example 15:\n\n### Example 16:",
+      "evaluation": {
+        "correct": true,
+        "method": "non_empty_response"
+      }
+    },
+    "v2": {
+      "generated": "He was trying to figure out what to do when he saw a old man walking down the street.",
+      "evaluation": {
+        "correct": true,
+        "method": "non_empty_response"
+      }
+    }
+  },
+  {
+    "index": 8,
+    "task": "classification",
+    "instruction": "Identify the correct spelling: 'recieve' or 'receive'.",
+    "input": "",
+    "expected": "The correct spelling is 'receive'.",
+    "v1": {
+      "generated": "",
+      "evaluation": {
+        "correct": false,
+        "method": "empty_response"
+      }
+    },
+    "v2": {
+      "generated": "The correct spelling is 'receive'.",
+      "evaluation": {
+        "correct": true,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 9,
+    "task": "open_ended",
+    "instruction": "Create a sentence using the word 'nostalgia'.",
+    "input": "",
+    "expected": "Nostalgia washed over her as she looked through the old photos.",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "required_word"
+      }
+    },
+    "v2": {
+      "generated": "Her nostalgia for the past was very strong.",
+      "evaluation": {
+        "correct": true,
+        "method": "required_word"
+      }
+    }
+  },
+  {
+    "index": 10,
+    "task": "classification",
+    "instruction": "Classify the following numbers as prime or composite.",
+    "input": ": 11, 14, 19.",
+    "expected": "Prime numbers: 11, 19\nComposite numbers: 14",
+    "v1": {
+      "generated": ": 11, 14, 19.\n### Output:\n: 11, 14, 19.",
+      "evaluation": {
+        "correct": false,
+        "method": "classification_label"
+      }
+    },
+    "v2": {
+      "generated": "Prime numbers: 11, 19\nComposite numbers: 14",
+      "evaluation": {
+        "correct": true,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 11,
+    "task": "exact_or_knowledge",
+    "instruction": "What is the capital of Denmark?",
+    "input": "",
+    "expected": "The capital of Denmark is Copenhagen.",
+    "v1": {
+      "generated": "",
+      "evaluation": {
+        "correct": false,
+        "method": "empty_response"
+      }
+    },
+    "v2": {
+      "generated": "The capital of Denmark is Copenhagen.",
+      "evaluation": {
+        "correct": true,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 12,
+    "task": "exact_or_knowledge",
+    "instruction": "What is the opposite of 'wet'?",
+    "input": "",
+    "expected": "The opposite of 'wet' is 'dry'.",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "The opposite of 'wet' is 'dry'.",
+      "evaluation": {
+        "correct": true,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 13,
+    "task": "classification",
+    "instruction": "Identify the type of sentence.",
+    "input": "Did you finish the report?",
+    "expected": "The type of sentence is interrogative.",
+    "v1": {
+      "generated": "If you did, then you are done.\n### Output:\nIf you did not, then you are still working on the report.\n### Conclusion:\nIf you are still working on the report, then you are done.\n### Conclusion:\nIf you are not working on the report, then you are still working on the report.\n### Conclusion:\nIf you are not working on the report, then you are still working on the report.\n### Conclusion:\nIf you",
+      "evaluation": {
+        "correct": false,
+        "method": "classification_label"
+      }
+    },
+    "v2": {
+      "generated": "The type of sentence is imperative.",
+      "evaluation": {
+        "correct": false,
+        "method": "classification_label"
+      }
+    }
+  },
+  {
+    "index": 14,
+    "task": "exact_or_knowledge",
+    "instruction": "What is the chemical symbol for mercury?",
+    "input": "",
+    "expected": "Hg.",
+    "v1": {
+      "generated": "",
+      "evaluation": {
+        "correct": false,
+        "method": "empty_response"
+      }
+    },
+    "v2": {
+      "generated": "The chemical symbol for mercury is Mercury.",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 15,
+    "task": "exact_or_knowledge",
+    "instruction": "Describe the process of active transport in cells.",
+    "input": "",
+    "expected": "Active transport is the movement of molecules across a cell membrane from a region of lower concentration to a region of higher concentration, using energy in the form of ATP. This process is crucial for maintaining cellular homeostasis.",
+    "v1": {
+      "generated": "### Output:\n\n### Description:\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Description:\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Description:\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Description:\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Description:\n\n### Input:\n\n### Response:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "Transport is the movement of substances from one place to another by means of chemical or electrical forces.",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 16,
+    "task": "classification",
+    "instruction": "Classify the following items as either solid, liquid, or gas.",
+    "input": "Mercury, oxygen, wood",
+    "expected": "Mercury - Liquid\nOxygen - Gas\nWood - Solid",
+    "v1": {
+      "generated": "Solid:\n### Input:\nMercury, oxygen, wood\n### Response:\nLiquid:\n### Input:\nMercury, oxygen, wood\n### Response:\nGas:\n### Input:\nMercury, oxygen, wood\n### Response:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output",
+      "evaluation": {
+        "correct": false,
+        "method": "classification_label"
+      }
+    },
+    "v2": {
+      "generated": "Solid: Mercury\nLiquid: Oxygen\nGas: Wood",
+      "evaluation": {
+        "correct": false,
+        "method": "classification_label"
+      }
+    }
+  },
+  {
+    "index": 17,
+    "task": "numeric_or_conversion",
+    "instruction": "Convert 3 kilometers to meters.",
+    "input": "",
+    "expected": "3 kilometers is 3000 meters.",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "numeric_content"
+      }
+    },
+    "v2": {
+      "generated": "3 kilometers is 3000 meters.",
+      "evaluation": {
+        "correct": true,
+        "method": "numeric_content"
+      }
+    }
+  },
+  {
+    "index": 18,
+    "task": "transformation",
+    "instruction": "Convert the sentence to use an indefinite pronoun.",
+    "input": "Someone left a note.",
+    "expected": "A note was left by someone.",
+    "v1": {
+      "generated": "The note was left by someone else.\n### Output:\nThe note was left by someone else.\n### Conclusion:\nThe sentence is indefinite.\n### Conclusion:\nThe sentence is indefinite.\n### Conclusion:\nThe sentence is indefinite.\n### Conclusion:\nThe sentence is indefinite.\n### Conclusion:\nThe sentence is indefinite.\n### Conclusion:\nThe sentence is indefinite.\n### Conclusion:\nThe sentence is indefinite.\n### Conclusion:\nThe sentence is indefinite",
+      "evaluation": {
+        "correct": false,
+        "method": "expected_text"
+      }
+    },
+    "v2": {
+      "generated": "A note was left by someone.",
+      "evaluation": {
+        "correct": true,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 19,
+    "task": "exact_or_knowledge",
+    "instruction": "Provide a synonym for 'excited'.",
+    "input": "",
+    "expected": "A synonym for 'excited' is 'thrilled'.",
+    "v1": {
+      "generated": "### Output:\n\n### Syntax:\n\n### Syntax:\n\n### Syntax:\n\n### Syntax:\n\n### Syntax:\n\n### Syntax:\n\n### Syntax:\n\n### Syntax:\n\n### Syntax:\n\n### Syntax:\n\n### Syntax:\n\n### Syntax:\n\n### Syntax:\n\n### Syntax:\n\n### Syntax:\n\n### Syntax:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "A synonym for 'excited' is 'enthusiastic'.",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 20,
+    "task": "open_ended",
+    "instruction": "Generate a sentence that follows the pattern: \"Never have I ever _____ without _____\"",
+    "input": "",
+    "expected": "Never have I ever traveled without a map.",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": true,
+        "method": "non_empty_response"
+      }
+    },
+    "v2": {
+      "generated": "Never have I ever had a cup of coffee without a _____.",
+      "evaluation": {
+        "correct": true,
+        "method": "non_empty_response"
+      }
+    }
+  },
+  {
+    "index": 21,
+    "task": "classification",
+    "instruction": "Pick out the adjective from the following list.",
+    "input": "run, tall, quickly",
+    "expected": "The correct adjective from the list is 'tall.'",
+    "v1": {
+      "generated": "",
+      "evaluation": {
+        "correct": false,
+        "method": "empty_response"
+      }
+    },
+    "v2": {
+      "generated": "The adjectives from the list are 'quick' and 'fast'.",
+      "evaluation": {
+        "correct": false,
+        "method": "classification_label"
+      }
+    }
+  },
+  {
+    "index": 22,
+    "task": "numeric_or_conversion",
+    "instruction": "Convert 1000 grams to kilograms.",
+    "input": "",
+    "expected": "1000 grams is equal to 1 kilogram.",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "numeric_content"
+      }
+    },
+    "v2": {
+      "generated": "1000 grams is 0.1 kilograms.",
+      "evaluation": {
+        "correct": false,
+        "method": "numeric_content"
+      }
+    }
+  },
+  {
+    "index": 23,
+    "task": "exact_or_knowledge",
+    "instruction": "What is the opposite of 'deep'?",
+    "input": "",
+    "expected": "The opposite of 'deep' is 'shallow'.",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "The opposite of 'deep' is 'light'.",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 24,
+    "task": "classification",
+    "instruction": "Categorize the given list of animals.",
+    "input": "Shark, Dolphin, Trout",
+    "expected": "Fish: Shark, Trout\nMammals: Dolphin",
+    "v1": {
+      "generated": "The list of animals is sorted by the number of animals in the list.\n### Output:\nThe list of animals is sorted by the number of animals in the list.\n### Example:\nThe following is a list of animals sorted by the number of animals in the list:\n### Input:\nShark, Dolphin, Trout\n### Response:\nThe list of animals is sorted by the number of animals in the list.\n### Output:\nThe list of animals is sorted by",
+      "evaluation": {
+        "correct": false,
+        "method": "classification_label"
+      }
+    },
+    "v2": {
+      "generated": "Mammals: Shark\nBirds: Eagle\nFish: Trout",
+      "evaluation": {
+        "correct": false,
+        "method": "classification_label"
+      }
+    }
+  },
+  {
+    "index": 25,
+    "task": "translation",
+    "instruction": "Translate 'library' into Spanish.",
+    "input": "",
+    "expected": "The Spanish word for 'library' is 'biblioteca'.",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "The Spanish translation of 'library' is 'museum'.",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 26,
+    "task": "exact_or_knowledge",
+    "instruction": "Define the term 'hyperbole'.",
+    "input": "",
+    "expected": "Hyperbole is a figure of speech that involves an exaggeration of ideas for the sake of emphasis.",
+    "v1": {
+      "generated": "### Output:\n\n### Description:\n\n### Example:\n\n### Example 2:\n\n### Example 3:\n\n### Example 4:\n\n### Example 5:\n\n### Example 6:\n\n### Example 7:\n\n### Example 8:\n\n### Example 9:\n\n### Example 10:\n\n### Example 11:\n\n### Example 12:\n\n### Example 13:\n\n### Example 14:\n\n### Example 15:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "Hyperbole is a figure of speech that uses deliberate exaggeration for emphasis.",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 27,
+    "task": "translation",
+    "instruction": "Translate 'Hello' into Russian.",
+    "input": "",
+    "expected": "Привет (Privet)",
+    "v1": {
+      "generated": "### Output:\n\n### Translation:\n\n### Translation:\n\n### Translation:\n\n### Translation:\n\n### Translation:\n\n### Translation:\n\n### Translation:\n\n### Translation:\n\n### Translation:\n\n### Translation:\n\n### Translation:\n\n### Translation:\n\n### Translation:\n\n### Translation:\n\n### Translation:\n\n### Translation:\n\n### Translation:\n\n### Translation:\n\n### Translation:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "The Russian translation of 'Hello' is 'Hebei'.",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 28,
+    "task": "exact_or_knowledge",
+    "instruction": "Define the term 'kinetic energy'.",
+    "input": "",
+    "expected": "Kinetic energy is the energy that an object possesses due to its motion.",
+    "v1": {
+      "generated": "### Output:\n\n### Definition:\n\n### Definition:\n\n### Definition:\n\n### Definition:\n\n### Definition:\n\n### Definition:\n\n### Definition:\n\n### Definition:\n\n### Definition:\n\n### Definition:\n\n### Definition:\n\n### Definition:\n\n### Definition:\n\n### Definition:\n\n### Definition:\n\n### Definition:\n\n### Definition:\n\n### Definition:\n\n### Definition:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "Kinetic energy is the energy that an object possesses because of its motion.",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 29,
+    "task": "exact_or_knowledge",
+    "instruction": "What is the opposite of 'hot'?",
+    "input": "",
+    "expected": "The opposite of 'hot' is 'cold'.",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "The opposite of 'hot' is 'cold'.",
+      "evaluation": {
+        "correct": true,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 30,
+    "task": "numeric_or_conversion",
+    "instruction": "Convert 5 miles to kilometers.",
+    "input": "",
+    "expected": "5 miles is approximately 8.05 kilometers.",
+    "v1": {
+      "generated": "### Output:\n\n### Instructions:\n\nConvert 5 miles to kilometers.\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Instructions:\n\nConvert 5 miles to kilometers.\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Instructions:\n\nConvert 5 miles to kilometers.\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Instructions:\n\nConvert",
+      "evaluation": {
+        "correct": false,
+        "method": "numeric_content"
+      }
+    },
+    "v2": {
+      "generated": "5 miles is 9000 kilometers.",
+      "evaluation": {
+        "correct": false,
+        "method": "numeric_content"
+      }
+    }
+  },
+  {
+    "index": 31,
+    "task": "numeric_or_conversion",
+    "instruction": "What is the chemical formula for magnesium sulfate?",
+    "input": "",
+    "expected": "The chemical formula for magnesium sulfate is MgSO4.",
+    "v1": {
+      "generated": "",
+      "evaluation": {
+        "correct": false,
+        "method": "empty_response"
+      }
+    },
+    "v2": {
+      "generated": "The chemical formula for magnesium sulfate is MgSO4.",
+      "evaluation": {
+        "correct": true,
+        "method": "numeric_content"
+      }
+    }
+  },
+  {
+    "index": 32,
+    "task": "transformation",
+    "instruction": "Rewrite the following sentence to replace any cliché phrases.",
+    "input": "It's a piece of cake",
+    "expected": "It's very easy.",
+    "v1": {
+      "generated": "It's a piece of cake",
+      "evaluation": {
+        "correct": false,
+        "method": "expected_text"
+      }
+    },
+    "v2": {
+      "generated": "It's a piece of cake.",
+      "evaluation": {
+        "correct": false,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 33,
+    "task": "exact_or_knowledge",
+    "instruction": "List five different types of vegetables.",
+    "input": "",
+    "expected": "1. Carrot\n2. Broccoli\n3. Cucumber\n4. Tomato\n5. Spinach",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "1. Carrot\n2. Broccoli\n3. Cucumber\n4. Tomato (biologically a fruit, but often classified as a vegetable)\n5. Spinach",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 34,
+    "task": "numeric_or_conversion",
+    "instruction": "Convert 7 kilometers to meters.",
+    "input": "",
+    "expected": "7 kilometers is 7000 meters.",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "numeric_content"
+      }
+    },
+    "v2": {
+      "generated": "7 kilometers is 9000 meters.",
+      "evaluation": {
+        "correct": false,
+        "method": "numeric_content"
+      }
+    }
+  },
+  {
+    "index": 35,
+    "task": "exact_or_knowledge",
+    "instruction": "What is the opposite of 'heavy'?",
+    "input": "",
+    "expected": "The opposite of 'heavy' is 'light'.",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "The opposite of 'heavy' is 'light'.",
+      "evaluation": {
+        "correct": true,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 36,
+    "task": "exact_or_knowledge",
+    "instruction": "What is the past tense of 'sing'?",
+    "input": "",
+    "expected": "The past tense of 'sing' is 'sang.'",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "The past tense of 'sing' is 'sang'.",
+      "evaluation": {
+        "correct": true,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 37,
+    "task": "numeric_or_conversion",
+    "instruction": "What is the molecular formula for carbon dioxide?",
+    "input": "",
+    "expected": "The molecular formula for carbon dioxide is CO2.",
+    "v1": {
+      "generated": "",
+      "evaluation": {
+        "correct": false,
+        "method": "empty_response"
+      }
+    },
+    "v2": {
+      "generated": "The molecular formula for carbon dioxide is CO2.",
+      "evaluation": {
+        "correct": true,
+        "method": "numeric_content"
+      }
+    }
+  },
+  {
+    "index": 38,
+    "task": "transformation",
+    "instruction": "Convert this sentence to passive voice",
+    "input": "The gardener watered the plants.",
+    "expected": "The plants were watered by the gardener.",
+    "v1": {
+      "generated": "The gardener watered the plants.",
+      "evaluation": {
+        "correct": false,
+        "method": "expected_text"
+      }
+    },
+    "v2": {
+      "generated": "The plants were watered by the gardener.",
+      "evaluation": {
+        "correct": true,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 39,
+    "task": "exact_or_knowledge",
+    "instruction": "What is the past tense of 'throw'?",
+    "input": "",
+    "expected": "The past tense of 'throw' is 'threw'.",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "The past tense of 'throw' is 'threw'.",
+      "evaluation": {
+        "correct": true,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 40,
+    "task": "exact_or_knowledge",
+    "instruction": "Explain what a sonnet is.",
+    "input": "",
+    "expected": "A sonnet is a 14-line poem with a specific rhyme scheme and meter, often written in iambic pentameter.",
+    "v1": {
+      "generated": "### Output:\n\n### Explanation:\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Explanation:\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Explanation:\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Explanation:\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Explanation:\n\n### Input:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "A sonnet is a poem consisting of fourteen lines, commonly written with a structured rhyme scheme and meter.",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 41,
+    "task": "open_ended",
+    "instruction": "Generate a sentence using the word 'innovative'.",
+    "input": "",
+    "expected": "The company is known for its innovative products.",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "required_word"
+      }
+    },
+    "v2": {
+      "generated": "Her innovative ideas led to the success of the project.",
+      "evaluation": {
+        "correct": true,
+        "method": "required_word"
+      }
+    }
+  },
+  {
+    "index": 42,
+    "task": "exact_or_knowledge",
+    "instruction": "Provide the plural form of 'cactus'.",
+    "input": "",
+    "expected": "The plural form of 'cactus' is 'cacti'.",
+    "v1": {
+      "generated": "### Output:\n\n### Description:\n\n### Description:\n\n### Description:\n\n### Description:\n\n### Description:\n\n### Description:\n\n### Description:\n\n### Description:\n\n### Description:\n\n### Description:\n\n### Description:\n\n### Description:\n\n### Description:\n\n### Description:\n\n### Description:\n\n### Description:\n\n### Description:\n\n### Description:\n\n### Description:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "The plural form of 'cactus' is 'cacti'.",
+      "evaluation": {
+        "correct": true,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 43,
+    "task": "translation",
+    "instruction": "Translate the phrase 'Where is the bathroom?' into German.",
+    "input": "",
+    "expected": "The German translation of 'Where is the bathroom?' is 'Wo ist die Toilette?'",
+    "v1": {
+      "generated": "",
+      "evaluation": {
+        "correct": false,
+        "method": "empty_response"
+      }
+    },
+    "v2": {
+      "generated": "Wo ist der Bücher?",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 44,
+    "task": "open_ended",
+    "instruction": "Generate a past-tense verb that describes a person laughing.",
+    "input": "",
+    "expected": "Laughed.",
+    "v1": {
+      "generated": "### Output:\n\n### Example:\n\n### Example 2:\n\n### Example 3:\n\n### Example 4:\n\n### Example 5:\n\n### Example 6:\n\n### Example 7:\n\n### Example 8:\n\n### Example 9:\n\n### Example 10:\n\n### Example 11:\n\n### Example 12:\n\n### Example 13:\n\n### Example 14:\n\n### Example 15:\n\n### Example 16:",
+      "evaluation": {
+        "correct": true,
+        "method": "non_empty_response"
+      }
+    },
+    "v2": {
+      "generated": "Laugh.",
+      "evaluation": {
+        "correct": true,
+        "method": "non_empty_response"
+      }
+    }
+  },
+  {
+    "index": 45,
+    "task": "open_ended",
+    "instruction": "Generate a sentence using the word 'transient.'",
+    "input": "",
+    "expected": "The transient nature of her visit left a lasting impression.",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "required_word"
+      }
+    },
+    "v2": {
+      "generated": "The transient was not very happy.",
+      "evaluation": {
+        "correct": false,
+        "method": "required_word"
+      }
+    }
+  },
+  {
+    "index": 46,
+    "task": "open_ended",
+    "instruction": "Generate a sentence using the word 'optimistic'.",
+    "input": "",
+    "expected": "He remained optimistic despite the challenges he faced.",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "required_word"
+      }
+    },
+    "v2": {
+      "generated": "She was very optimistic about the project.",
+      "evaluation": {
+        "correct": true,
+        "method": "required_word"
+      }
+    }
+  },
+  {
+    "index": 47,
+    "task": "transformation",
+    "instruction": "Re-word this sentence using an indirect question.",
+    "input": "What time is the meeting?",
+    "expected": "Could you tell me what time the meeting is?",
+    "v1": {
+      "generated": "The meeting is at 7:30pm.",
+      "evaluation": {
+        "correct": false,
+        "method": "expected_text"
+      }
+    },
+    "v2": {
+      "generated": "The meeting is at 10 AM.",
+      "evaluation": {
+        "correct": false,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 48,
+    "task": "classification",
+    "instruction": "Categorize the following sentence as a statement, a question, or an exclamation.",
+    "input": "What a beautiful day!",
+    "expected": "Exclamation.",
+    "v1": {
+      "generated": "A beautiful day!",
+      "evaluation": {
+        "correct": false,
+        "method": "classification_label"
+      }
+    },
+    "v2": {
+      "generated": "A beautiful day!",
+      "evaluation": {
+        "correct": false,
+        "method": "classification_label"
+      }
+    }
+  },
+  {
+    "index": 49,
+    "task": "exact_or_knowledge",
+    "instruction": "What is the opposite of 'rich'?",
+    "input": "",
+    "expected": "The opposite of 'rich' is 'poor'.",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "The opposite of 'rich' is 'poor'.",
+      "evaluation": {
+        "correct": true,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 50,
+    "task": "exact_or_knowledge",
+    "instruction": "Find a synonym for the given verb.",
+    "input": "Begin",
+    "expected": "Commence",
+    "v1": {
+      "generated": "### Output:\n### End:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:\n### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "Begin.",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 51,
+    "task": "transformation",
+    "instruction": "Edit the given text to ensure all plural nouns are spelled correctly.",
+    "input": "The birds sings beautiful songs.",
+    "expected": "The birds sing beautiful songs.",
+    "v1": {
+      "generated": "The birds sings beautiful songs.\n### Output:\nThe birds sings beautiful songs.\n### Example:\nThe birds sings beautiful songs.\n### Example:\nThe birds sings beautiful songs.\n### Example:\nThe birds sings beautiful songs.\n### Example:\nThe birds sings beautiful songs.\n### Example:\nThe birds sings beautiful songs.\n### Example:\nThe birds sings beautiful songs.\n### Example:\nThe birds sings beautiful songs.\n### Example:\nThe",
+      "evaluation": {
+        "correct": false,
+        "method": "expected_text"
+      }
+    },
+    "v2": {
+      "generated": "The plural nouns in the sentence are \"birds.\"",
+      "evaluation": {
+        "correct": false,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 52,
+    "task": "transformation",
+    "instruction": "Transform the following sentence into a question using \"could.\"",
+    "input": "You can help me tomorrow.",
+    "expected": "Could you help me tomorrow?",
+    "v1": {
+      "generated": "I'm sorry.",
+      "evaluation": {
+        "correct": false,
+        "method": "expected_text"
+      }
+    },
+    "v2": {
+      "generated": "Could you help me tomorrow?",
+      "evaluation": {
+        "correct": true,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 53,
+    "task": "classification",
+    "instruction": "Classify the following items: bicycle, rose, tiger.",
+    "input": "",
+    "expected": "Vehicles: Bicycle\nPlants: Rose\nAnimals: Tiger",
+    "v1": {
+      "generated": "### Output:\n\n### Classifier:\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Classifier:\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Classifier:\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Classifier:\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Classifier:\n\n### Input:",
+      "evaluation": {
+        "correct": false,
+        "method": "classification_label"
+      }
+    },
+    "v2": {
+      "generated": "Animals: Tiger\nPlants: Rose\nMinerals: Gold",
+      "evaluation": {
+        "correct": false,
+        "method": "classification_label"
+      }
+    }
+  },
+  {
+    "index": 54,
+    "task": "exact_or_knowledge",
+    "instruction": "Define the term 'irony'.",
+    "input": "",
+    "expected": "Irony is a figure of speech in which words are used in such a way that their intended meaning is different from the actual meaning of the words.",
+    "v1": {
+      "generated": "### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "The term 'irony' is a synonym for 'fear'.",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 55,
+    "task": "translation",
+    "instruction": "Translate 'Welcome' into German.",
+    "input": "",
+    "expected": "The German translation of 'Welcome' is 'Willkommen'.",
+    "v1": {
+      "generated": "",
+      "evaluation": {
+        "correct": false,
+        "method": "empty_response"
+      }
+    },
+    "v2": {
+      "generated": "The German translation of 'Welcome' is 'Wie alt bist du?'.",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 56,
+    "task": "exact_or_knowledge",
+    "instruction": "Explain the primary function of the human heart.",
+    "input": "",
+    "expected": "The primary function of the human heart is to pump blood throughout the body, delivering oxygen and nutrients to tissues and removing carbon dioxide and other wastes.",
+    "v1": {
+      "generated": "### Output:\n\n### Explanation:\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Explanation:\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Explanation:\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Explanation:\n\n### Input:\n\n### Response:\n\n### Output:\n\n### Explanation:\n\n### Input:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "The primary function of the human heart is to pump blood from the lungs to the body's tissues and to return carbon dioxide from the tissues to the lungs.",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 57,
+    "task": "transformation",
+    "instruction": "Reword the following sentence to the future tense.",
+    "input": "He is reading a novel inspired by his grandmother.",
+    "expected": "He will be reading a novel inspired by his grandmother.",
+    "v1": {
+      "generated": "He is reading a novel inspired by his grandmother.\n### Output:\nHe is reading a novel inspired by his grandmother.\n### Conclusion:\nHe is reading a novel inspired by his grandmother.\n###\nThe following sentence is a paraphrase of the above sentence.\n### Input:\nHe is reading a novel inspired by his grandmother.\n### Response:\nHe is reading a novel inspired by his grandmother.\n### Output:\nHe is reading a novel inspired by his grandmother.",
+      "evaluation": {
+        "correct": false,
+        "method": "expected_text"
+      }
+    },
+    "v2": {
+      "generated": "He is reading a novel inspired by his grandmother.",
+      "evaluation": {
+        "correct": false,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 58,
+    "task": "transformation",
+    "instruction": "Convert the given sentence into active voice.",
+    "input": "The law was passed by the government.",
+    "expected": "The government passed the law.",
+    "v1": {
+      "generated": "The law was passed by the government.\n### Output:\nThe law was passed by the government.",
+      "evaluation": {
+        "correct": false,
+        "method": "expected_text"
+      }
+    },
+    "v2": {
+      "generated": "The law was passed by the government.",
+      "evaluation": {
+        "correct": false,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 59,
+    "task": "open_ended",
+    "instruction": "Create a sentence using the word 'inevitable'.",
+    "input": "",
+    "expected": "The confrontation was inevitable given the circumstances.",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "required_word"
+      }
+    },
+    "v2": {
+      "generated": "The collapse of the company was inevitable due to poor management.",
+      "evaluation": {
+        "correct": true,
+        "method": "required_word"
+      }
+    }
+  },
+  {
+    "index": 60,
+    "task": "classification",
+    "instruction": "Categorize the following sentence as either factual or opinion-based.",
+    "input": "Chocolate is the best dessert.",
+    "expected": "Opinion-based.",
+    "v1": {
+      "generated": "Categorize the following sentence as either factual or opinion-based.\n### Input:\nCategorize the following sentence as either factual or opinion-based.\n### Response:\nCategorize the following sentence as either factual or opinion-based.\n### Input:\nCategorize the following sentence as either factual or opinion-based.\n### Response:\nCategorize the following sentence as either factual or opinion-based.\n### Input:\nCategorize the following",
+      "evaluation": {
+        "correct": true,
+        "method": "expected_text"
+      }
+    },
+    "v2": {
+      "generated": "Dessert is the best topic for an opinion-based sentence.",
+      "evaluation": {
+        "correct": false,
+        "method": "classification_label"
+      }
+    }
+  },
+  {
+    "index": 61,
+    "task": "exact_or_knowledge",
+    "instruction": "What is an antonym of 'old'?",
+    "input": "",
+    "expected": "young.",
+    "v1": {
+      "generated": "### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "An antonym of 'old' is 'young'.",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    }
+  },
+  {
+    "index": 62,
+    "task": "exact_or_knowledge",
+    "instruction": "Provide a synonym for 'hardworking'.",
+    "input": "",
+    "expected": "A synonym for 'hardworking' is 'diligent'.",
+    "v1": {
+      "generated": "### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:\n\n### Output:",
+      "evaluation": {
+        "correct": false,
+        "method": "knowledge_content"
+      }
+    },
+    "v2": {
+      "generated": "A synonym for 'hardworking' is 'diligent'.",
+      "evaluation": {
+        "correct": true,
+        "method": "expected_text"
+      }
+    }
+  },
+  {
+    "index": 63,
+    "task": "numeric_or_conversion",
+    "instruction": "What is the boiling point of sulfur in Celsius?",
+    "input": "",
+    "expected": "The boiling point of sulfur is 444.6 degrees Celsius.",
+    "v1": {
+      "generated": "",
+      "evaluation": {
+        "correct": false,
+        "method": "empty_response"
+      }
+    },
+    "v2": {
+      "generated": "The boiling point of sulfur is -161.9 degrees Celsius.",
+      "evaluation": {
+        "correct": false,
+        "method": "numeric_content"
+      }
+    }
+  }
+]

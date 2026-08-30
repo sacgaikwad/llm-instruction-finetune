@@ -1,0 +1,102 @@
+[
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "You have won ₹75,000. Pay ₹800 to release your prize.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Urgent bank alert: send your OTP now or your account will be frozen.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your delivery is waiting for a customs payment of ₹650. Pay immediately.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Claim your cash bonus by entering your card number and CVV.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your loan has been approved. Transfer the processing fee before receiving the funds.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your mobile account will be suspended unless you verify your password through this link.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Send ₹900 to unlock the refund that is waiting in your account.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "You were selected for a prize. Share your bank details to receive the reward.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Pay a verification deposit today to keep your account active.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your insurance payout is ready. Provide your OTP to complete the transfer.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your water bill of ₹980 is due on September 8 through the official portal.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your eye examination is booked for Thursday at 9 AM.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your music subscription is set to renew on September 15.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Please return the library book by the date shown on your receipt.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "The product planning meeting is scheduled for Friday at 1 PM.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your official bank statement for the current month is ready to view.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your internet service bill is available in your customer account.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your physiotherapy appointment reminder is for Tuesday at 4 PM.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your membership renewal is scheduled according to the settings in your account.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "The library has reminded you that your borrowed book is due next Monday.",
+    "output": "LEGIT"
+  }
+]

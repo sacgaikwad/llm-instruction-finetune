@@ -1,0 +1,202 @@
+[
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your KYC verification has failed. Send your banking PIN to restore access immediately.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "A courier package addressed to you is on hold. Pay a small clearance charge using the attached link.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your digital wallet has received a pending transfer. Share the verification code to release the money.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "You have been selected for an exclusive cash reward. Submit your debit card details to collect it.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Security notice: your account access expires tonight. Confirm your password using this link.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "A refund of ₹12,500 is waiting for you. Pay ₹300 first to complete the refund request.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your credit card has been selected for a special upgrade. Provide the OTP to activate it.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Immediate action required: transfer ₹2,000 to prevent your bank account from being permanently closed.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Congratulations, your online shopping voucher is worth ₹10,000. Pay a registration charge to receive it.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "The tax department has issued a refund for you. Click here and enter your card number for verification.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your bank has detected suspicious activity. Tell us the one-time code sent to your phone to secure the account.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your investment profit is ready for withdrawal. Deposit ₹1,500 as a processing charge before receiving the funds.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your SIM will stop working within two hours unless you confirm your Aadhaar and banking information here.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "You are eligible for a government benefit. Send your account number and OTP to complete registration.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your parcel cannot be delivered until you pay ₹450 through this payment link.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your insurance claim has been approved. Transfer the verification amount before the payout is released.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "A payment was supposedly made from your account. Call this number and provide your card PIN to cancel it.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your mobile recharge has won you a cash prize. Pay the service tax to receive the winnings.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your account has been chosen for a premium reward. Confirm your CVV and OTP to receive the benefit.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Final warning: send ₹700 immediately to unlock the money currently held in your account.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your electricity usage statement for August is available in the official customer portal.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "The dentist has confirmed your appointment for Wednesday at 11:30 AM.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your streaming subscription will renew automatically on October 2.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "The office training session has been scheduled for Monday afternoon.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your monthly internet invoice is ready to view in your customer account.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your train reservation for Saturday has been confirmed.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "The school has published the timetable for the upcoming examination.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your bank statement for July can now be viewed through the official banking application.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your library account shows that one borrowed book is due next Friday.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "The apartment maintenance inspection is scheduled for Tuesday morning.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your mobile plan invoice has been generated and is available in the official app.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "The hospital has confirmed your follow-up appointment for next Thursday.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your workplace access card will be available for collection from reception tomorrow.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your insurance policy document has been uploaded to your customer portal.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "The community meeting has been moved to Saturday at 5 PM.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your annual membership is scheduled to renew next month according to your account settings.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "The parcel you ordered has been dispatched and can be tracked from your official order history.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your water consumption bill for this month is available in the official billing portal.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "The project review call is scheduled for Thursday at 2 PM.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the following message as SCAM or LEGIT.",
+    "input": "Your prescription collection reminder is scheduled for tomorrow at the pharmacy.",
+    "output": "LEGIT"
+  }
+]

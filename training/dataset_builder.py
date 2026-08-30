@@ -5,10 +5,14 @@ from pathlib import Path
 
 RANDOM_SEED = 42
 
-TRAIN_SIZE = 935
+ORIGINAL_TRAIN_SIZE = 935
 VALIDATION_SIZE = 55
 TEST_SIZE = 110
 
+
+# ============================================================
+# JSON HELPERS
+# ============================================================
 
 def load_json(file_path):
 
@@ -44,6 +48,10 @@ def save_json(
             ensure_ascii=False
         )
 
+
+# ============================================================
+# NORMALIZATION
+# ============================================================
 
 def normalize_example(example):
 
@@ -81,30 +89,9 @@ def example_key(example):
     )
 
 
-def remove_duplicates(examples):
-
-    unique_examples = []
-    seen = set()
-
-    for example in examples:
-
-        key = example_key(
-            example
-        )
-
-        if key in seen:
-            continue
-
-        seen.add(key)
-
-        unique_examples.append(
-            normalize_example(
-                example
-            )
-        )
-
-    return unique_examples
-
+# ============================================================
+# VALIDATION
+# ============================================================
 
 def validate_example(example):
 
@@ -159,27 +146,141 @@ def validate_examples(examples):
     return valid, invalid
 
 
+# ============================================================
+# DUPLICATE REMOVAL
+# ============================================================
+
+def remove_duplicates(examples):
+
+    unique_examples = []
+    seen = set()
+
+    for example in examples:
+
+        normalized = normalize_example(
+            example
+        )
+
+        key = example_key(
+            normalized
+        )
+
+        if key in seen:
+            continue
+
+        seen.add(key)
+
+        unique_examples.append(
+            normalized
+        )
+
+    return unique_examples
+
+
+# ============================================================
+# OVERLAP FILTER
+# ============================================================
+
+def remove_overlaps(
+    examples,
+    excluded_examples
+):
+
+    excluded_keys = {
+        example_key(example)
+        for example in excluded_examples
+    }
+
+    filtered_examples = []
+    removed_examples = []
+
+    for example in examples:
+
+        normalized = normalize_example(
+            example
+        )
+
+        key = example_key(
+            normalized
+        )
+
+        if key in excluded_keys:
+
+            removed_examples.append(
+                normalized
+            )
+
+        else:
+
+            filtered_examples.append(
+                normalized
+            )
+
+    return (
+        filtered_examples,
+        removed_examples
+    )
+
+
+# ============================================================
+# OVERLAP COUNT
+# ============================================================
+
+def count_overlap(
+    examples_a,
+    examples_b
+):
+
+    keys_a = {
+        example_key(example)
+        for example in examples_a
+    }
+
+    keys_b = {
+        example_key(example)
+        for example in examples_b
+    }
+
+    return len(
+        keys_a.intersection(
+            keys_b
+        )
+    )
+
+
+# ============================================================
+# ORIGINAL DATASET SPLIT
+# ============================================================
+
 def split_original_dataset(data):
 
-    train_portion = int(
-        len(data) * 0.85
+    expected_size = (
+        ORIGINAL_TRAIN_SIZE
+        + VALIDATION_SIZE
+        + TEST_SIZE
     )
 
-    test_portion = int(
-        len(data) * 0.10
-    )
+    if len(data) != expected_size:
+
+        raise ValueError(
+            "Unexpected original dataset size: "
+            f"{len(data)}. "
+            f"Expected {expected_size}."
+        )
 
     train_data = data[
-        :train_portion
-    ]
-
-    test_data = data[
-        train_portion:
-        train_portion + test_portion
+        :ORIGINAL_TRAIN_SIZE
     ]
 
     validation_data = data[
-        train_portion + test_portion:
+        ORIGINAL_TRAIN_SIZE:
+        ORIGINAL_TRAIN_SIZE
+        + VALIDATION_SIZE
+    ]
+
+    test_data = data[
+        ORIGINAL_TRAIN_SIZE
+        + VALIDATION_SIZE:
     ]
 
     return (
@@ -188,6 +289,10 @@ def split_original_dataset(data):
         test_data
     )
 
+
+# ============================================================
+# TARGETED DATA
+# ============================================================
 
 def load_targeted_examples(
     targeted_data_paths
@@ -213,11 +318,65 @@ def load_targeted_examples(
     return targeted_examples
 
 
+# ============================================================
+# CLASSIFICATION VALIDATION DATA
+# ============================================================
+
+def load_classification_validation_examples(
+    file_path
+):
+
+    data = load_json(
+        file_path
+    )
+
+    # Only SCAM and LEGIT are used for the
+    # binary classification validation set.
+    #
+    # AMBIGUOUS examples are intentionally excluded
+    # from this validation set.
+
+    classification_validation = [
+        example
+        for example in data
+        if example.get(
+            "output",
+            ""
+        ).strip()
+        in {
+            "SCAM",
+            "LEGIT"
+        }
+    ]
+
+    return classification_validation
+
+
+# ============================================================
+# DATASET SUMMARY
+# ============================================================
+
+def print_dataset_summary(
+    name,
+    examples
+):
+
+    print(
+        f"{name}: {len(examples)}"
+    )
+
+
+# ============================================================
+# BUILD V2 DATASET
+# ============================================================
+
 def build_v2_training_dataset(
     original_data_path,
     targeted_data_paths,
+    classification_validation_path,
     training_output_path,
     validation_output_path,
+    classification_validation_output_path,
     test_output_path
 ):
 
@@ -226,24 +385,20 @@ def build_v2_training_dataset(
     )
 
     # --------------------------------------------------------
-    # Load original 1100 examples
+    # LOAD ORIGINAL DATASET
     # --------------------------------------------------------
 
     original_data = load_json(
         original_data_path
     )
 
-    print(
-        "Original examples:",
-        len(original_data)
+    print_dataset_summary(
+        "Original examples",
+        original_data
     )
 
     # --------------------------------------------------------
-    # Split exactly:
-    #
-    # 935 training
-    # 55 validation
-    # 110 test
+    # SPLIT ORIGINAL DATASET
     # --------------------------------------------------------
 
     (
@@ -254,23 +409,106 @@ def build_v2_training_dataset(
         original_data
     )
 
-    print(
-        "Original training:",
-        len(original_training)
+    print_dataset_summary(
+        "Original training",
+        original_training
     )
 
-    print(
-        "Validation:",
-        len(validation_data)
+    print_dataset_summary(
+        "Validation",
+        validation_data
     )
 
-    print(
-        "Test:",
-        len(test_data)
+    print_dataset_summary(
+        "Test",
+        test_data
     )
 
     # --------------------------------------------------------
-    # Load targeted V2 examples
+    # NORMALIZE ORIGINAL DATA
+    # --------------------------------------------------------
+
+    original_training = [
+        normalize_example(example)
+        for example in original_training
+    ]
+
+    validation_data = [
+        normalize_example(example)
+        for example in validation_data
+    ]
+
+    test_data = [
+        normalize_example(example)
+        for example in test_data
+    ]
+
+    # --------------------------------------------------------
+    # LOAD CLASSIFICATION VALIDATION
+    # --------------------------------------------------------
+
+    classification_validation_data = (
+        load_classification_validation_examples(
+            classification_validation_path
+        )
+    )
+
+    classification_validation_data = [
+        normalize_example(example)
+        for example in classification_validation_data
+    ]
+
+    print_dataset_summary(
+        "Classification validation",
+        classification_validation_data
+    )
+
+    # --------------------------------------------------------
+    # PRE-TRAINING HOLDOUT CHECK
+    # --------------------------------------------------------
+
+    overlap_with_validation = count_overlap(
+        classification_validation_data,
+        validation_data
+    )
+
+    overlap_with_test = count_overlap(
+        classification_validation_data,
+        test_data
+    )
+
+    print(
+        "\n===== PRE-TRAINING OVERLAP CHECK ====="
+    )
+
+    print(
+        "Classification validation <-> "
+        f"general validation: "
+        f"{overlap_with_validation}"
+    )
+
+    print(
+        "Classification validation <-> "
+        f"test: "
+        f"{overlap_with_test}"
+    )
+
+    if overlap_with_validation:
+
+        raise ValueError(
+            "Classification validation overlaps "
+            "with general validation."
+        )
+
+    if overlap_with_test:
+
+        raise ValueError(
+            "Classification validation overlaps "
+            "with test data."
+        )
+
+    # --------------------------------------------------------
+    # LOAD TARGETED EXAMPLES
     # --------------------------------------------------------
 
     targeted_examples = (
@@ -279,13 +517,71 @@ def build_v2_training_dataset(
         )
     )
 
-    print(
-        "Targeted examples:",
-        len(targeted_examples)
+    print_dataset_summary(
+        "Targeted examples",
+        targeted_examples
     )
 
     # --------------------------------------------------------
-    # Combine ONLY with training data
+    # PROTECTED HOLDOUTS
+    #
+    # These datasets must NEVER enter training:
+    #
+    # 1. General validation
+    # 2. General test
+    # 3. Classification validation
+    # --------------------------------------------------------
+
+    protected_examples = (
+        validation_data
+        +
+        test_data
+        +
+        classification_validation_data
+    )
+
+    # --------------------------------------------------------
+    # REMOVE HOLDOUTS FROM TARGETED DATA
+    # --------------------------------------------------------
+
+    (
+        targeted_examples,
+        removed_targeted_holdouts
+    ) = remove_overlaps(
+        targeted_examples,
+        protected_examples
+    )
+
+    print(
+        "\n===== HOLDOUT PROTECTION ====="
+    )
+
+    print(
+        "Removed targeted examples overlapping "
+        "with holdout datasets: "
+        f"{len(removed_targeted_holdouts)}"
+    )
+
+    # --------------------------------------------------------
+    # REMOVE HOLDOUTS FROM ORIGINAL TRAINING
+    # --------------------------------------------------------
+
+    (
+        original_training,
+        removed_original_holdouts
+    ) = remove_overlaps(
+        original_training,
+        protected_examples
+    )
+
+    print(
+        "Removed original training examples "
+        "overlapping with holdout datasets: "
+        f"{len(removed_original_holdouts)}"
+    )
+
+    # --------------------------------------------------------
+    # COMBINE TRAINING DATA
     # --------------------------------------------------------
 
     combined_training = (
@@ -294,13 +590,13 @@ def build_v2_training_dataset(
         targeted_examples
     )
 
-    print(
-        "Combined training examples:",
-        len(combined_training)
+    print_dataset_summary(
+        "Combined training before cleanup",
+        combined_training
     )
 
     # --------------------------------------------------------
-    # Remove duplicates
+    # REMOVE DUPLICATES
     # --------------------------------------------------------
 
     combined_training = (
@@ -309,13 +605,13 @@ def build_v2_training_dataset(
         )
     )
 
-    print(
-        "After duplicate removal:",
-        len(combined_training)
+    print_dataset_summary(
+        "Training after duplicate removal",
+        combined_training
     )
 
     # --------------------------------------------------------
-    # Validate training data
+    # VALIDATE TRAINING DATA
     # --------------------------------------------------------
 
     (
@@ -325,20 +621,20 @@ def build_v2_training_dataset(
         combined_training
     )
 
-    print(
-        "Valid training examples:",
-        len(training_data)
+    print_dataset_summary(
+        "Valid training examples",
+        training_data
     )
 
-    print(
-        "Invalid training examples:",
-        len(invalid_examples)
+    print_dataset_summary(
+        "Invalid training examples",
+        invalid_examples
     )
 
     if invalid_examples:
 
         print(
-            "\n===== INVALID EXAMPLES ====="
+            "\n===== INVALID TRAINING EXAMPLES ====="
         )
 
         for example in invalid_examples:
@@ -350,25 +646,174 @@ def build_v2_training_dataset(
         )
 
     # --------------------------------------------------------
-    # Validate validation/test data
+    # VALIDATE GENERAL VALIDATION DATA
     # --------------------------------------------------------
 
-    validation_data = [
-        normalize_example(
-            example
-        )
-        for example in validation_data
-    ]
+    (
+        validation_data,
+        invalid_validation
+    ) = validate_examples(
+        validation_data
+    )
 
-    test_data = [
-        normalize_example(
-            example
+    if invalid_validation:
+
+        raise ValueError(
+            "Invalid validation examples found."
         )
-        for example in test_data
-    ]
 
     # --------------------------------------------------------
-    # Shuffle ONLY training data
+    # VALIDATE TEST DATA
+    # --------------------------------------------------------
+
+    (
+        test_data,
+        invalid_test
+    ) = validate_examples(
+        test_data
+    )
+
+    if invalid_test:
+
+        raise ValueError(
+            "Invalid test examples found."
+        )
+
+    # --------------------------------------------------------
+    # VALIDATE CLASSIFICATION VALIDATION
+    # --------------------------------------------------------
+
+    (
+        classification_validation_data,
+        invalid_classification_validation
+    ) = validate_examples(
+        classification_validation_data
+    )
+
+    if invalid_classification_validation:
+
+        raise ValueError(
+            "Invalid classification validation "
+            "examples found."
+        )
+
+    # --------------------------------------------------------
+    # FINAL LEAKAGE CHECK
+    # --------------------------------------------------------
+
+    overlap_training_validation = count_overlap(
+        training_data,
+        validation_data
+    )
+
+    overlap_training_test = count_overlap(
+        training_data,
+        test_data
+    )
+
+    overlap_training_classification = count_overlap(
+        training_data,
+        classification_validation_data
+    )
+
+    validation_test_overlap = count_overlap(
+        validation_data,
+        test_data
+    )
+
+    validation_classification_overlap = count_overlap(
+        validation_data,
+        classification_validation_data
+    )
+
+    test_classification_overlap = count_overlap(
+        test_data,
+        classification_validation_data
+    )
+
+    print(
+        "\n===== FINAL DATASET LEAKAGE CHECK ====="
+    )
+
+    print(
+        "Training <-> Validation: "
+        f"{overlap_training_validation}"
+    )
+
+    print(
+        "Training <-> Test: "
+        f"{overlap_training_test}"
+    )
+
+    print(
+        "Training <-> Classification validation: "
+        f"{overlap_training_classification}"
+    )
+
+    print(
+        "Validation <-> Test: "
+        f"{validation_test_overlap}"
+    )
+
+    print(
+        "Validation <-> Classification validation: "
+        f"{validation_classification_overlap}"
+    )
+
+    print(
+        "Test <-> Classification validation: "
+        f"{test_classification_overlap}"
+    )
+
+    # --------------------------------------------------------
+    # FAIL IF ANY LEAKAGE REMAINS
+    # --------------------------------------------------------
+
+    if overlap_training_validation:
+
+        raise ValueError(
+            "Training/validation leakage detected."
+        )
+
+    if overlap_training_test:
+
+        raise ValueError(
+            "Training/test leakage detected."
+        )
+
+    if overlap_training_classification:
+
+        raise ValueError(
+            "Training/classification validation "
+            "leakage detected."
+        )
+
+    if validation_test_overlap:
+
+        raise ValueError(
+            "Validation/test overlap detected."
+        )
+
+    if validation_classification_overlap:
+
+        raise ValueError(
+            "Validation/classification validation "
+            "overlap detected."
+        )
+
+    if test_classification_overlap:
+
+        raise ValueError(
+            "Test/classification validation "
+            "overlap detected."
+        )
+
+    print(
+        "STATUS: Dataset leakage check PASSED."
+    )
+
+    # --------------------------------------------------------
+    # SHUFFLE TRAINING DATA
     # --------------------------------------------------------
 
     random.seed(
@@ -380,7 +825,7 @@ def build_v2_training_dataset(
     )
 
     # --------------------------------------------------------
-    # Save datasets
+    # SAVE DATASETS
     # --------------------------------------------------------
 
     save_json(
@@ -398,27 +843,37 @@ def build_v2_training_dataset(
         test_output_path
     )
 
+    save_json(
+        classification_validation_data,
+        classification_validation_output_path
+    )
+
     # --------------------------------------------------------
-    # Final summary
+    # FINAL SUMMARY
     # --------------------------------------------------------
 
     print(
         "\n===== V2 DATASET CREATED ====="
     )
 
-    print(
-        "Training:",
-        len(training_data)
+    print_dataset_summary(
+        "Training",
+        training_data
     )
 
-    print(
-        "Validation:",
-        len(validation_data)
+    print_dataset_summary(
+        "Validation",
+        validation_data
     )
 
-    print(
-        "Test:",
-        len(test_data)
+    print_dataset_summary(
+        "Test",
+        test_data
+    )
+
+    print_dataset_summary(
+        "Classification validation",
+        classification_validation_data
     )
 
     print(
@@ -445,6 +900,22 @@ def build_v2_training_dataset(
         test_output_path
     )
 
+    print(
+        "\nClassification validation output:"
+    )
+
+    print(
+        classification_validation_output_path
+    )
+
+    print(
+        "\n===== DATASET BUILD COMPLETE ====="
+    )
+
+
+# ============================================================
+# MAIN
+# ============================================================
 
 def main():
 
@@ -481,6 +952,11 @@ def main():
         project_root
         / "data"
         / "v2"
+        / "classification_control_examples.json",
+
+        project_root
+        / "data"
+        / "v2"
         / "transformation_examples.json",
 
         project_root
@@ -488,6 +964,13 @@ def main():
         / "v2"
         / "calculation_examples.json"
     ]
+
+    classification_validation_path = (
+        project_root
+        / "data"
+        / "v2"
+        / "classification_validation_examples.json"
+    )
 
     training_output_path = (
         project_root
@@ -510,14 +993,24 @@ def main():
         / "test_data_v2.json"
     )
 
+    classification_validation_output_path = (
+        project_root
+        / "data"
+        / "v2"
+        / "classification_validation_examples_v2.json"
+    )
+
     build_v2_training_dataset(
         original_data_path,
         targeted_data_paths,
+        classification_validation_path,
         training_output_path,
         validation_output_path,
+        classification_validation_output_path,
         test_output_path
     )
 
 
 if __name__ == "__main__":
+
     main()

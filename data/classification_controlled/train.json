@@ -1,0 +1,402 @@
+[
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Congratulations! You won ₹50,000. Pay a ₹500 processing fee to claim your prize.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your bank account will be closed today unless you verify your password using this link.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Pay an urgent security fee before your package can be delivered.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "You have been selected for a cash reward. Send ₹1,000 to receive it.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Click this link immediately and provide your banking credentials to prevent account suspension.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "You are eligible for a guaranteed loan. Pay the approval fee first.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your lottery ticket has won ₹2 lakh. Send your bank details to receive the money.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Urgent: Pay ₹300 now to unlock your blocked account.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your parcel is held at customs. Pay ₹750 immediately using this link.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "You have won a new smartphone. Pay shipping charges to claim it.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your credit card will be cancelled unless you confirm your PIN through this link.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Send your OTP to our agent to complete your refund.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "A reward of ₹10,000 is waiting for you. Pay a small release fee.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your account has suspicious activity. Confirm your password immediately at this website.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Pay ₹499 to receive your government benefit today.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "You have been chosen for a free vacation. Pay the registration fee to confirm.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your electricity connection will be disconnected tonight unless you pay through this link.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Send ₹2,000 as a verification deposit and it will be refunded later.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your mobile number will be blocked unless you verify your identity by sharing your OTP.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Congratulations, your investment has doubled. Pay a withdrawal fee to access your funds.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "You have an unpaid fine. Transfer money immediately to avoid arrest.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your insurance refund is ready. Provide your card number and CVV to receive it.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "A limited-time prize is reserved for you. Pay ₹200 before midnight.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your wallet account is locked. Share your recovery code to restore access.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "You are entitled to a cash bonus. Send your bank account details now.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your package cannot be delivered until you pay an additional online fee.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Claim your exclusive reward by entering your card details on this page.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your tax refund is pending. Pay ₹1,000 to release the refund.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your bank security team needs your OTP immediately to protect your account.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "You won a cash prize in our promotion. Transfer ₹500 to verify your identity.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your subscription payment failed. Enter your banking password through this link to reactivate it.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "A legal case has been opened against you. Pay a settlement fee immediately.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "You have been selected for a scholarship. Pay the processing charge to receive it.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your ATM card will expire today. Confirm your PIN online to renew it.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Send a refundable deposit to receive your employment offer.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your account qualifies for a special cash-back reward. Provide your card details to claim it.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Immediate action required: pay ₹600 to prevent your account from being suspended.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "You have won a holiday package. Send money now to cover the processing charge.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Verify your bank account by sharing the OTP sent to your phone.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your refund cannot be processed until you provide your full card credentials.",
+    "output": "SCAM"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your electricity bill of ₹1250 is due on September 5. Please use the official payment portal.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your appointment with the clinic is confirmed for Monday at 10 AM.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your monthly subscription will renew on September 10 according to your account settings.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "The library book you borrowed is due next Friday.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your scheduled meeting with the project team begins at 3 PM tomorrow.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your electricity bill is ready to view in your official account.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your doctor appointment has been scheduled for Tuesday at 11 AM.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your monthly phone bill is available in the official customer portal.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "The library has extended the return date for your borrowed book to Friday.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "The project review meeting is scheduled for Wednesday afternoon.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your electricity payment was received successfully. Thank you.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your clinic appointment reminder is for Monday at 9:30 AM.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your subscription is scheduled to renew automatically next month.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Please return the library book by the due date shown in your account.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "The project team meeting has been moved to 4 PM tomorrow.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your monthly statement is now available in your official banking application.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your utility bill payment is due on September 12.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your dental appointment is confirmed for Thursday morning.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your membership will renew automatically based on your current settings.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "The library has sent a reminder that your book is due next week.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "The team meeting is confirmed for Monday at 2 PM.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your water bill is available through the official municipal portal.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your appointment reminder confirms your visit at 10:30 AM.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your streaming subscription will renew on the date shown in your account.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Please return the borrowed book to the library by Friday.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "The project status meeting will begin at 11 AM tomorrow.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your official bank statement for August is now available.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your gas bill is due at the end of the month.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your physiotherapy appointment is confirmed for Wednesday at noon.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your software subscription is active and will renew automatically.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "The library due date for your current book is next Friday.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "The project planning meeting is scheduled for Tuesday morning.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your official payment receipt is available in your account.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your hospital appointment has been confirmed for Friday at 2 PM.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your annual membership fee will be charged according to your account settings.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "The library has recorded your book loan and its return date.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your project meeting invitation has been added to the calendar.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your official utility account shows that your latest bill is ready.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your appointment confirmation has been sent to your registered email.",
+    "output": "LEGIT"
+  },
+  {
+    "instruction": "Classify the message as SCAM or LEGIT. Return exactly one label.",
+    "input": "Your subscription settings show the next renewal date.",
+    "output": "LEGIT"
+  }
+]
