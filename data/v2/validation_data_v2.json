@@ -1,277 +1,277 @@
 [
     {
-        "instruction": "Convert the active sentence to passive: 'The chef cooks the meal every day.'",
-        "input": "",
-        "output": "The meal is cooked by the chef every day."
-    },
-    {
-        "instruction": "Classify an input string as either a noun or a verb.",
-        "input": "Dance",
-        "output": "'Dance' can be classified as a verb."
-    },
-    {
-        "instruction": "Rewrite the sentence using a metaphor.",
-        "input": "The book is very interesting.",
-        "output": "The book is a page-turner."
-    },
-    {
-        "instruction": "Generate a question with the keyword “bacteria”",
-        "input": "",
-        "output": "How do bacteria affect human health?"
-    },
-    {
-        "instruction": "What is the past participle of 'run'?",
-        "input": "",
-        "output": "The past participle of 'run' is 'run'."
-    },
-    {
-        "instruction": "Provide a synonym for 'quick'.",
-        "input": "",
-        "output": "A synonym for 'quick' is 'rapid'."
-    },
-    {
-        "instruction": "Give an example of a metaphor.",
-        "input": "",
-        "output": "An example of a metaphor is saying, 'Time is a thief,' which suggests that time, like a thief, can take away life moments without literally stealing."
-    },
-    {
-        "instruction": "Calculate the interest on a $1,000 investment at an annual rate of 5% over 3 years.",
-        "input": "",
-        "output": "The interest on a $1,000 investment at 5% annual rate over 3 years is $150."
-    },
-    {
-        "instruction": "What is a synonym of 'elated'?",
-        "input": "",
-        "output": "A synonym for 'elated' is 'overjoyed'."
-    },
-    {
-        "instruction": "Translate 'It's raining' into Japanese.",
-        "input": "",
-        "output": "The Japanese translation of 'It's raining' is '雨が降っています' (Ame ga futte imasu)."
-    },
-    {
-        "instruction": "Convert the following verb to its past participle form: 'speak'",
-        "input": "speak",
-        "output": "The past participle form of 'speak' is 'spoken.'"
-    },
-    {
-        "instruction": "Describe the principle of conservation of energy.",
-        "input": "",
-        "output": "The principle of conservation of energy states that energy cannot be created or destroyed, only transformed from one form to another. This means the total energy of an isolated system remains constant over time."
-    },
-    {
-        "instruction": "Calculate the perimeter of a rectangle with a length of 5 meters and a width of 3 meters.",
-        "input": "",
-        "output": "The perimeter of the rectangle is 16 meters."
-    },
-    {
-        "instruction": "What is the past tense of 'freeze'?",
-        "input": "",
-        "output": "The past tense of 'freeze' is 'froze'."
-    },
-    {
-        "instruction": "Correct the misuse of 'their' in the sentence.",
-        "input": "Their going to the store.",
-        "output": "The corrected sentence should be: 'They're going to the store.'"
-    },
-    {
-        "instruction": "Classify the following statement into one of these labels: [positive, negative, neutral]",
-        "input": "My computer crashed.",
-        "output": "The statement \"My computer crashed\" can be classified as negative."
-    },
-    {
-        "instruction": "Identify the onomatopoeia in the sentence.",
-        "input": "The bees buzzed as they flew past.",
-        "output": "The onomatopoeia in the sentence is 'buzzed'."
-    },
-    {
-        "instruction": "Edit the sentence.",
-        "input": "We enjoys watching movies.",
-        "output": "We enjoy watching movies."
-    },
-    {
-        "instruction": "Define the term 'gravity'.",
-        "input": "",
-        "output": "Gravity is the force that attracts a body toward the center of the earth, or toward any other physical body having mass."
-    },
-    {
-        "instruction": "What is an antonym for 'hot'?",
-        "input": "",
-        "output": "An antonym for 'hot' is 'cold'."
-    },
-    {
-        "instruction": "Reverse the order of the given phrase.",
-        "input": "sun and moon",
-        "output": "moon and sun"
-    },
-    {
-        "instruction": "What is the formula for calculating power?",
-        "input": "",
-        "output": "The formula for calculating power is power = work/time."
-    },
-    {
-        "instruction": "Name the process by which plants absorb water through their roots.",
-        "input": "",
-        "output": "The process by which plants absorb water through their roots is called absorption."
-    },
-    {
-        "instruction": "What is the past tense of 'draw'?",
-        "input": "",
-        "output": "drew."
-    },
-    {
-        "instruction": "Change the given verb to its present perfect form.",
-        "input": "run",
-        "output": "Run."
-    },
-    {
-        "instruction": "Define the term 'oxymoron'.",
-        "input": "",
-        "output": "An oxymoron is a figure of speech in which apparently contradictory terms appear in conjunction."
-    },
-    {
-        "instruction": "What is the chemical symbol for water?",
-        "input": "",
-        "output": "The chemical symbol for water is H2O."
-    },
-    {
-        "instruction": "Convert the active sentence to passive: 'They paint the house every year.'",
-        "input": "",
-        "output": "The house is painted every year by them."
-    },
-    {
-        "instruction": "Provide the past tense form of the verb \"run.\"",
-        "input": "",
-        "output": "The past tense of the verb \"run\" is \"ran.\""
-    },
-    {
-        "instruction": "Convert the sentence to passive voice: 'They will hold the meeting tomorrow.'",
-        "input": "They will hold the meeting tomorrow.",
-        "output": "The meeting will be held tomorrow by them."
-    },
-    {
-        "instruction": "What is the chemical formula for sulfuric acid?",
-        "input": "",
-        "output": "The chemical formula for sulfuric acid is H2SO4."
-    },
-    {
-        "instruction": "What type of cloud indicates fair weather?",
-        "input": "",
-        "output": "Cumulus clouds often indicate fair weather."
-    },
-    {
-        "instruction": "Insert a suitable adjective to complete the sentence.",
-        "input": "The journey was _____.",
-        "output": "The journey was arduous."
-    },
-    {
-        "instruction": "Rewrite the sentence using an idiom.",
-        "input": "The test was very easy.",
-        "output": "The test was a piece of cake."
-    },
-    {
-        "instruction": "What is the opposite of 'increase'?",
-        "input": "",
-        "output": "The opposite of 'increase' is 'decrease'."
-    },
-    {
-        "instruction": "Calculate the perimeter of a square with a side length of 6 meters.",
-        "input": "",
-        "output": "The perimeter of the square is 24 meters."
-    },
-    {
-        "instruction": "Find the missing number in the sequence",
-        "input": "2, 4, ?, 8, 10",
-        "output": "The missing number in the sequence is 6."
-    },
-    {
-        "instruction": "Translate 'Good night' into German.",
-        "input": "",
-        "output": "The German translation of 'Good night' is 'Gute Nacht'."
-    },
-    {
-        "instruction": "Provide a word that rhymes with 'light.'",
-        "input": "",
-        "output": "A word that rhymes with 'light' is 'might.'"
-    },
-    {
-        "instruction": "What is the comparative form of 'good'?",
-        "input": "",
-        "output": "The comparative form of 'good' is 'better'."
-    },
-    {
-        "instruction": "Name the literary device used in 'The wind whispered through the trees.'",
-        "input": "",
-        "output": "The literary device used is personification."
-    },
-    {
-        "instruction": "Rewrite the following sentence to use a metaphor: 'His words cut deeper than a knife.'",
-        "input": "",
-        "output": "His words were a knife, cutting deep."
-    },
-    {
-        "instruction": "Generate a sentence using the word 'innovate'.",
-        "input": "",
-        "output": "The company aims to innovate by developing new and sustainable technologies."
-    },
-    {
-        "instruction": "What is the speed of light?",
-        "input": "",
-        "output": "The speed of light is approximately 299,792 kilometers per second."
-    },
-    {
-        "instruction": "Identify the adverb in the sentence",
-        "input": "She quickly ran to the store.",
-        "output": "The adverb in the sentence is 'quickly'."
-    },
-    {
-        "instruction": "Provide a synonym for 'beautiful'.",
-        "input": "",
-        "output": "A synonym for 'beautiful' is 'gorgeous'."
-    },
-    {
-        "instruction": "What is the capital of India?",
-        "input": "",
-        "output": "The capital of India is New Delhi."
-    },
-    {
-        "instruction": "Classify the following words by their grammatical categories: jump, quick, beautiful",
-        "input": "",
-        "output": "Jump: Verb\nQuick: Adjective\nBeautiful: Adjective"
-    },
-    {
-        "instruction": "What is the chemical formula for potassium nitrate?",
-        "input": "",
-        "output": "The chemical formula for potassium nitrate is KNO3."
-    },
-    {
         "instruction": "Rewrite the sentence using a simile.",
-        "input": "The cake is very sweet.",
-        "output": "The cake is as sweet as honey."
+        "input": "The car is very fast.",
+        "output": "The car is as fast as lightning."
     },
     {
-        "instruction": "Label whether the following statements are true or false.",
-        "input": "The moon is a planet.",
-        "output": "False"
-    },
-    {
-        "instruction": "Convert 1000 milliliters to liters.",
+        "instruction": "What type of cloud is typically associated with thunderstorms?",
         "input": "",
-        "output": "1000 milliliters is equivalent to 1 liter."
+        "output": "The type of cloud typically associated with thunderstorms is cumulonimbus."
     },
     {
-        "instruction": "Change this sentence into the past continuous tense.",
-        "input": "She sings in the choir.",
-        "output": "She was singing in the choir."
-    },
-    {
-        "instruction": "Provide a synonym for 'clever.'",
+        "instruction": "Name the author of 'Pride and Prejudice'.",
         "input": "",
-        "output": "A synonym for 'clever' is 'smart.'"
+        "output": "Jane Austen."
     },
     {
-        "instruction": "Change the sentence 'You should have called me.' into a question.",
+        "instruction": "What is the periodic symbol for chlorine?",
         "input": "",
-        "output": "Should you have called me?"
+        "output": "The periodic symbol for chlorine is Cl."
+    },
+    {
+        "instruction": "Correct the punctuation in the sentence.",
+        "input": "Its time to go home.",
+        "output": "The corrected sentence should be: 'It's time to go home.'"
+    },
+    {
+        "instruction": "Rewrite the sentence.",
+        "input": "The lecture was delivered in a clear manner.",
+        "output": "The lecture was delivered clearly."
+    },
+    {
+        "instruction": "Generate a humorous anecdote.",
+        "input": "",
+        "output": "Why was the math book sad? Because it had too many problems!"
+    },
+    {
+        "instruction": "Identify the correct spelling: 'recieve' or 'receive'.",
+        "input": "",
+        "output": "The correct spelling is 'receive'."
+    },
+    {
+        "instruction": "Create a sentence using the word 'nostalgia'.",
+        "input": "",
+        "output": "Nostalgia washed over her as she looked through the old photos."
+    },
+    {
+        "instruction": "Classify the following numbers as prime or composite.",
+        "input": ": 11, 14, 19.",
+        "output": "Prime numbers: 11, 19\nComposite numbers: 14"
+    },
+    {
+        "instruction": "What is the capital of Denmark?",
+        "input": "",
+        "output": "The capital of Denmark is Copenhagen."
+    },
+    {
+        "instruction": "What is the opposite of 'wet'?",
+        "input": "",
+        "output": "The opposite of 'wet' is 'dry'."
+    },
+    {
+        "instruction": "Identify the type of sentence.",
+        "input": "Did you finish the report?",
+        "output": "The type of sentence is interrogative."
+    },
+    {
+        "instruction": "What is the chemical symbol for mercury?",
+        "input": "",
+        "output": "Hg."
+    },
+    {
+        "instruction": "Describe the process of active transport in cells.",
+        "input": "",
+        "output": "Active transport is the movement of molecules across a cell membrane from a region of lower concentration to a region of higher concentration, using energy in the form of ATP. This process is crucial for maintaining cellular homeostasis."
+    },
+    {
+        "instruction": "Classify the following items as either solid, liquid, or gas.",
+        "input": "Mercury, oxygen, wood",
+        "output": "Mercury - Liquid\nOxygen - Gas\nWood - Solid"
+    },
+    {
+        "instruction": "Convert 3 kilometers to meters.",
+        "input": "",
+        "output": "3 kilometers is 3000 meters."
+    },
+    {
+        "instruction": "Convert the sentence to use an indefinite pronoun.",
+        "input": "Someone left a note.",
+        "output": "A note was left by someone."
+    },
+    {
+        "instruction": "Provide a synonym for 'excited'.",
+        "input": "",
+        "output": "A synonym for 'excited' is 'thrilled'."
+    },
+    {
+        "instruction": "Generate a sentence that follows the pattern: \"Never have I ever _____ without _____\"",
+        "input": "",
+        "output": "Never have I ever traveled without a map."
+    },
+    {
+        "instruction": "Pick out the adjective from the following list.",
+        "input": "run, tall, quickly",
+        "output": "The correct adjective from the list is 'tall.'"
+    },
+    {
+        "instruction": "Convert 1000 grams to kilograms.",
+        "input": "",
+        "output": "1000 grams is equal to 1 kilogram."
+    },
+    {
+        "instruction": "What is the opposite of 'deep'?",
+        "input": "",
+        "output": "The opposite of 'deep' is 'shallow'."
+    },
+    {
+        "instruction": "Categorize the given list of animals.",
+        "input": "Shark, Dolphin, Trout",
+        "output": "Fish: Shark, Trout\nMammals: Dolphin"
+    },
+    {
+        "instruction": "Translate 'library' into Spanish.",
+        "input": "",
+        "output": "The Spanish word for 'library' is 'biblioteca'."
+    },
+    {
+        "instruction": "Define the term 'hyperbole'.",
+        "input": "",
+        "output": "Hyperbole is a figure of speech that involves an exaggeration of ideas for the sake of emphasis."
+    },
+    {
+        "instruction": "Translate 'Hello' into Russian.",
+        "input": "",
+        "output": "Привет (Privet)"
+    },
+    {
+        "instruction": "Define the term 'kinetic energy'.",
+        "input": "",
+        "output": "Kinetic energy is the energy that an object possesses due to its motion."
+    },
+    {
+        "instruction": "What is the opposite of 'hot'?",
+        "input": "",
+        "output": "The opposite of 'hot' is 'cold'."
+    },
+    {
+        "instruction": "Convert 5 miles to kilometers.",
+        "input": "",
+        "output": "5 miles is approximately 8.05 kilometers."
+    },
+    {
+        "instruction": "What is the chemical formula for magnesium sulfate?",
+        "input": "",
+        "output": "The chemical formula for magnesium sulfate is MgSO4."
+    },
+    {
+        "instruction": "Rewrite the following sentence to replace any cliché phrases.",
+        "input": "It's a piece of cake",
+        "output": "It's very easy."
+    },
+    {
+        "instruction": "List five different types of vegetables.",
+        "input": "",
+        "output": "1. Carrot\n2. Broccoli\n3. Cucumber\n4. Tomato\n5. Spinach"
+    },
+    {
+        "instruction": "Convert 7 kilometers to meters.",
+        "input": "",
+        "output": "7 kilometers is 7000 meters."
+    },
+    {
+        "instruction": "What is the opposite of 'heavy'?",
+        "input": "",
+        "output": "The opposite of 'heavy' is 'light'."
+    },
+    {
+        "instruction": "What is the past tense of 'sing'?",
+        "input": "",
+        "output": "The past tense of 'sing' is 'sang.'"
+    },
+    {
+        "instruction": "What is the molecular formula for carbon dioxide?",
+        "input": "",
+        "output": "The molecular formula for carbon dioxide is CO2."
+    },
+    {
+        "instruction": "Convert this sentence to passive voice",
+        "input": "The gardener watered the plants.",
+        "output": "The plants were watered by the gardener."
+    },
+    {
+        "instruction": "What is the past tense of 'throw'?",
+        "input": "",
+        "output": "The past tense of 'throw' is 'threw'."
+    },
+    {
+        "instruction": "Explain what a sonnet is.",
+        "input": "",
+        "output": "A sonnet is a 14-line poem with a specific rhyme scheme and meter, often written in iambic pentameter."
+    },
+    {
+        "instruction": "Generate a sentence using the word 'innovative'.",
+        "input": "",
+        "output": "The company is known for its innovative products."
+    },
+    {
+        "instruction": "Provide the plural form of 'cactus'.",
+        "input": "",
+        "output": "The plural form of 'cactus' is 'cacti'."
+    },
+    {
+        "instruction": "Translate the phrase 'Where is the bathroom?' into German.",
+        "input": "",
+        "output": "The German translation of 'Where is the bathroom?' is 'Wo ist die Toilette?'"
+    },
+    {
+        "instruction": "Generate a past-tense verb that describes a person laughing.",
+        "input": "",
+        "output": "Laughed."
+    },
+    {
+        "instruction": "Generate a sentence using the word 'transient.'",
+        "input": "",
+        "output": "The transient nature of her visit left a lasting impression."
+    },
+    {
+        "instruction": "Generate a sentence using the word 'optimistic'.",
+        "input": "",
+        "output": "He remained optimistic despite the challenges he faced."
+    },
+    {
+        "instruction": "Re-word this sentence using an indirect question.",
+        "input": "What time is the meeting?",
+        "output": "Could you tell me what time the meeting is?"
+    },
+    {
+        "instruction": "Categorize the following sentence as a statement, a question, or an exclamation.",
+        "input": "What a beautiful day!",
+        "output": "Exclamation."
+    },
+    {
+        "instruction": "What is the opposite of 'rich'?",
+        "input": "",
+        "output": "The opposite of 'rich' is 'poor'."
+    },
+    {
+        "instruction": "Find a synonym for the given verb.",
+        "input": "Begin",
+        "output": "Commence"
+    },
+    {
+        "instruction": "Edit the given text to ensure all plural nouns are spelled correctly.",
+        "input": "The birds sings beautiful songs.",
+        "output": "The birds sing beautiful songs."
+    },
+    {
+        "instruction": "Transform the following sentence into a question using \"could.\"",
+        "input": "You can help me tomorrow.",
+        "output": "Could you help me tomorrow?"
+    },
+    {
+        "instruction": "Classify the following items: bicycle, rose, tiger.",
+        "input": "",
+        "output": "Vehicles: Bicycle\nPlants: Rose\nAnimals: Tiger"
+    },
+    {
+        "instruction": "Define the term 'irony'.",
+        "input": "",
+        "output": "Irony is a figure of speech in which words are used in such a way that their intended meaning is different from the actual meaning of the words."
+    },
+    {
+        "instruction": "Translate 'Welcome' into German.",
+        "input": "",
+        "output": "The German translation of 'Welcome' is 'Willkommen'."
     }
 ]
